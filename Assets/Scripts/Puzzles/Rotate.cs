@@ -7,22 +7,20 @@ public class Rotate : MonoBehaviour
 
     public float RotateAmount;
     public float rotateTo;
-    public char Key;
     public bool canRotate;
-    public int[] clearCode;
-    public int[] currentCode;
 
     public void Update()
     {
+        
 
-        if (Input.GetKeyDown(Key) && canRotate)
+        if (Input.GetKeyDown(KeyCode.Z) && canRotate)
         {
+            
             rotateTo += RotateAmount;
             if(rotateTo >= 360)
             {
                 rotateTo -= 360;
             }
-            EnterCodeUp(0);
         }
 
 
@@ -47,15 +45,6 @@ public class Rotate : MonoBehaviour
     public void RotateObjectY(GameObject obj, float rotation, float speed)
     {
         obj.transform.rotation = Quaternion.RotateTowards(obj.transform.rotation, Quaternion.Euler(0.0f, rotation, 0.0f), speed);
-    }
-
-    public void EnterCodeUp(int pos)
-    {
-        currentCode[pos] += 1;
-        if (currentCode[pos] > 4)
-        {
-            currentCode[pos] = 1;
-        }
     }
 
 }
