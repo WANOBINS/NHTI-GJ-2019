@@ -8,6 +8,7 @@ public class Child : MonoBehaviour
     public float speed;
     public Vector3 destination;
     public bool immortal;
+    private GameObject gameController;
 
 
     // Start is called before the first frame update
@@ -16,7 +17,7 @@ public class Child : MonoBehaviour
         ChildName childName = new ChildName();
         name = childName.Name();
         destination = endPoint();
-
+        gameController = GameObject.FindGameObjectWithTag("GameController");
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class Child : MonoBehaviour
         if(!immortal && transform.position.z < 1)
         {
             immortal = true;
+            gameController.GetComponent<ChildSpawn>().lives--;
             Debug.Log(name + " has made it to the bouncey castle you pathetic magician!");
         }
 
@@ -37,7 +39,7 @@ public class Child : MonoBehaviour
     public Vector3 endPoint()
     {
         float x = Random.Range(-3f, 3f);
-        Vector3 dest = new Vector3(x, 1.5f, -2f);
+        Vector3 dest = new Vector3(x, 1.5f, -3f);
         return dest;
     }
 

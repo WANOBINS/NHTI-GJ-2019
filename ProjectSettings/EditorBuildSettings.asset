@@ -5,19 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cody's Test.unity
     guid: 04f930aae28091442984b399e88c27fd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Colby's Test.unity
     guid: 8d45df42590f33f4c9d1bc02a21ab277
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jack's Test.unity
     guid: 8541ee3a9850cff44856d7300cbbf9e3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Steve's Test.unity
     guid: d2837ebdcf5ba0543bd38cfb2d8188ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nick's Test.unity
     guid: 8e75d1a6dfe03b34f9e8f08a367cb5cf
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 5ed2d579e91b60247b3c364831ea191e
   m_configObjects: {}

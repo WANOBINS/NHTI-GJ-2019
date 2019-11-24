@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChildSpawn : MonoBehaviour
 {
@@ -9,15 +10,33 @@ public class ChildSpawn : MonoBehaviour
     public float spawnTimer;
     public float nextSpawnTime;
     public GameObject[] spawns;
+    public int lives;
+
+    void Start()
+    {
+        nextSpawnTime = Time.time + nextSpawnTime;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextSpawnTime)
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        if (Time.time > nextSpawnTime)
         {
             SpawnChild();
             nextSpawnTime += spawnTimer;
         }
+
+        if (lives < 1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
     }
 
     public void SpawnChild()
