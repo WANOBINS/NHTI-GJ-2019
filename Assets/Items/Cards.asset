@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Cards
   Description: 
-  PhysicalItem: {fileID: 197936689169583117, guid: 29c32d022ad91e447b95636baaf4a4c9,
+  PhysicalItem: {fileID: 547185606375830871, guid: 95f217d2cd8af9745aec584ba38b76e4,
     type: 3}
   IconImage: {fileID: 0}

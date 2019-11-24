@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8377981359257222604}
   m_Layer: 0
   m_Name: Darkness
-  m_TagString: Untagged
+  m_TagString: MagicHatObjSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,9 +100,11 @@ GameObject:
   - component: {fileID: 4099389649421843104}
   - component: {fileID: 6194210003275910371}
   - component: {fileID: 6486165060712512411}
+  - component: {fileID: -684363502640303675}
+  - component: {fileID: -1122930975457538698}
   m_Layer: 0
   m_Name: TopHat
-  m_TagString: Untagged
+  m_TagString: MagicHat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,3 +414,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.27, y: 0.02, z: 0.05}
   m_Center: {x: 0, y: -0.11, z: 0.15}
+--- !u!114 &-684363502640303675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397506834118707295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f3fec125d9b9224090aa32dca39f756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alwaysDropAll: 0
+  DropLimitOverride: 0
+  dropLimit: 1
+  loot:
+  - item: {fileID: 11400000, guid: 4fb1d09df4a6e36489b3940577210e64, type: 2}
+    alwaysDrop: 1
+    randomDropAmt: 0
+    dropRate: 100
+    dropAmt: 1
+    maxDropAmt: 0
+  - item: {fileID: 11400000, guid: a8fbdd8c94819114bb41763b87df0798, type: 2}
+    alwaysDrop: 0
+    randomDropAmt: 0
+    dropRate: 30
+    dropAmt: 1
+    maxDropAmt: 0
+--- !u!114 &-1122930975457538698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397506834118707295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc67b65e67eb3645a08e0ddd1a088b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicHat: {fileID: 0}
+  magicHatObjSpawn: {fileID: 0}

@@ -24,13 +24,13 @@ public class LootTable : MonoBehaviour
             {
                 if (roll <= item.dropRate)
                 {
-                    Debug.Log("Congrats Loot acquired! You rolled: " + roll);
+                   //Debug.Log("Congrats Loot acquired! You rolled: " + roll);
                     droppedItems.Add(item);
                 } else {
-                    Debug.Log("Luck hasn't been with you! You rolled: " + roll);
+                    //Debug.Log("Luck hasn't been with you! You rolled: " + roll);
                 }
             } else {
-                Debug.Log("Congrats Loot acquired! No roll required!");
+                //Debug.Log("Congrats Loot acquired! No roll required!");
                 droppedItems.Add(item);
             }
         }

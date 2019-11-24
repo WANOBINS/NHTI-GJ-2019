@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Rabbit
   Description: 
-  PhysicalItem: {fileID: 1935109357408002312, guid: 274ef48a80c339148b6f1d27bb842b8c,
+  PhysicalItem: {fileID: 3009896949647523005, guid: 50272dde62dc68845b91f3a50522d6bc,
     type: 3}
   IconImage: {fileID: 0}

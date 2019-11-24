@@ -16,6 +16,7 @@ public class Child : MonoBehaviour
         ChildName childName = new ChildName();
         name = childName.Name();
         destination = endPoint();
+
     }
 
     // Update is called once per frame
@@ -28,11 +29,14 @@ public class Child : MonoBehaviour
             immortal = true;
             Debug.Log(name + " has made it to the bouncey castle you pathetic magician!");
         }
+
     }
+
+    
 
     public Vector3 endPoint()
     {
-        float x = Random.Range(-15f, 15f);
+        float x = Random.Range(-3f, 3f);
         Vector3 dest = new Vector3(x, 1.5f, -2f);
         return dest;
     }

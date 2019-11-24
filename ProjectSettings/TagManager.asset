@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Lens Camera
   - MagicHat
+  - FxTemporaire
+  - projectile
+  - MagicHatObjSpawn
+  - Child
+  - hand
   layers:
   - Default
   - TransparentFX
